@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({extended : true}));
 function sceretAccess(req,res,next){
     const password = req.body["password"];
     console.log(req.body);
-    if(password === "SecretWay"){
+    if(password === "Prinda"){
         isAuthorizedUser = true;
     }
     next();
